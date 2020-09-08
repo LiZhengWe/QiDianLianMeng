@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, CustomTabBarItemType){
     CustomTabBarItemTypeDefault,
-    CustomTabBarItemTypeMessage,    // 消息
-    CustomTabBarItemTypeAddVideo,
-    CustomTabBarItemTypeShop       // 店铺
+    CustomTabBarItemTypeHome,    // 首页
+    CustomTabBarItemTypeData,    // 数据
+    CustomTabBarItemTypeMine     // 我的
 };
 
 @interface QDTabBarItem : UITabBarItem

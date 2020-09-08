@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,13 @@
 		8378BE212505E7340060479D /* QDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BE202505E7340060479D /* QDTabBarViewController.m */; };
 		8378BE242505E7700060479D /* QDTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BE232505E7700060479D /* QDTabBarItem.m */; };
 		8378BE282506029D0060479D /* QDTabBarPreLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BE272506029D0060479D /* QDTabBarPreLoad.m */; };
+		83ABFA202506082700722E4C /* QDHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA1F2506082700722E4C /* QDHomePageViewController.m */; };
+		83ABFA242506089700722E4C /* QDDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA232506089700722E4C /* QDDataViewController.m */; };
+		83ABFA282506208300722E4C /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA272506208300722E4C /* UIColor+RGB.m */; };
+		83ABFA2E2506299300722E4C /* QDDataTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA2D2506299300722E4C /* QDDataTableHeaderView.m */; };
+		83ABFA3625066DDA00722E4C /* QDDataTongJiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA3525066DDA00722E4C /* QDDataTongJiView.m */; };
+		83ABFA392506758400722E4C /* UIButton+QDExtand.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA382506758400722E4C /* UIButton+QDExtand.m */; };
+		83ABFA3C2506765E00722E4C /* FTKMethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA3B2506765E00722E4C /* FTKMethodSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,21 @@
 		8378BE232505E7700060479D /* QDTabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDTabBarItem.m; sourceTree = "<group>"; };
 		8378BE262506029D0060479D /* QDTabBarPreLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDTabBarPreLoad.h; sourceTree = "<group>"; };
 		8378BE272506029D0060479D /* QDTabBarPreLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDTabBarPreLoad.m; sourceTree = "<group>"; };
+		83ABFA1E2506082700722E4C /* QDHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDHomePageViewController.h; sourceTree = "<group>"; };
+		83ABFA1F2506082700722E4C /* QDHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDHomePageViewController.m; sourceTree = "<group>"; };
+		83ABFA222506089700722E4C /* QDDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDataViewController.h; sourceTree = "<group>"; };
+		83ABFA232506089700722E4C /* QDDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDDataViewController.m; sourceTree = "<group>"; };
+		83ABFA262506208300722E4C /* UIColor+RGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGB.h"; sourceTree = "<group>"; };
+		83ABFA272506208300722E4C /* UIColor+RGB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGB.m"; sourceTree = "<group>"; };
+		83ABFA2A2506253A00722E4C /* QDAppMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDAppMacro.h; sourceTree = "<group>"; };
+		83ABFA2C2506299300722E4C /* QDDataTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDataTableHeaderView.h; sourceTree = "<group>"; };
+		83ABFA2D2506299300722E4C /* QDDataTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDDataTableHeaderView.m; sourceTree = "<group>"; };
+		83ABFA3425066DDA00722E4C /* QDDataTongJiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDataTongJiView.h; sourceTree = "<group>"; };
+		83ABFA3525066DDA00722E4C /* QDDataTongJiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDDataTongJiView.m; sourceTree = "<group>"; };
+		83ABFA372506758400722E4C /* UIButton+QDExtand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+QDExtand.h"; sourceTree = "<group>"; };
+		83ABFA382506758400722E4C /* UIButton+QDExtand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+QDExtand.m"; sourceTree = "<group>"; };
+		83ABFA3A2506765E00722E4C /* FTKMethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTKMethodSwizzle.h; sourceTree = "<group>"; };
+		83ABFA3B2506765E00722E4C /* FTKMethodSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTKMethodSwizzle.m; sourceTree = "<group>"; };
 		CA6B800886098108942EF217 /* libPods-QiDian.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QiDian.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63AE69124003CDBA85E8F1D /* Pods-QiDian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiDian.release.xcconfig"; path = "Target Support Files/Pods-QiDian/Pods-QiDian.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +139,9 @@
 		8378BDF62505E25D0060479D /* QiDian */ = {
 			isa = PBXGroup;
 			children = (
+				83ABFA2525061FCF00722E4C /* Tool(工具) */,
+				83ABFA212506083E00722E4C /* Data(数据tab) */,
+				83ABFA1D250607D700722E4C /* Home（首页tab） */,
 				8378BE25250602550060479D /* PreLoad */,
 				8378BE1E2505E3E40060479D /* Tab */,
 				8378BDF72505E25D0060479D /* AppDelegate.h */,
@@ -130,6 +155,7 @@
 				8378BE052505E2600060479D /* LaunchScreen.storyboard */,
 				8378BE082505E2600060479D /* Info.plist */,
 				8378BE092505E2600060479D /* main.m */,
+				83ABFA2A2506253A00722E4C /* QDAppMacro.h */,
 			);
 			path = QiDian;
 			sourceTree = "<group>";
@@ -163,6 +189,49 @@
 			path = PreLoad;
 			sourceTree = "<group>";
 		};
+		83ABFA1D250607D700722E4C /* Home（首页tab） */ = {
+			isa = PBXGroup;
+			children = (
+				83ABFA1E2506082700722E4C /* QDHomePageViewController.h */,
+				83ABFA1F2506082700722E4C /* QDHomePageViewController.m */,
+			);
+			path = "Home（首页tab）";
+			sourceTree = "<group>";
+		};
+		83ABFA212506083E00722E4C /* Data(数据tab) */ = {
+			isa = PBXGroup;
+			children = (
+				83ABFA2B2506295C00722E4C /* View */,
+				83ABFA222506089700722E4C /* QDDataViewController.h */,
+				83ABFA232506089700722E4C /* QDDataViewController.m */,
+			);
+			path = "Data(数据tab)";
+			sourceTree = "<group>";
+		};
+		83ABFA2525061FCF00722E4C /* Tool(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				83ABFA3A2506765E00722E4C /* FTKMethodSwizzle.h */,
+				83ABFA3B2506765E00722E4C /* FTKMethodSwizzle.m */,
+				83ABFA262506208300722E4C /* UIColor+RGB.h */,
+				83ABFA272506208300722E4C /* UIColor+RGB.m */,
+				83ABFA372506758400722E4C /* UIButton+QDExtand.h */,
+				83ABFA382506758400722E4C /* UIButton+QDExtand.m */,
+			);
+			path = "Tool(工具)";
+			sourceTree = "<group>";
+		};
+		83ABFA2B2506295C00722E4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83ABFA2C2506299300722E4C /* QDDataTableHeaderView.h */,
+				83ABFA2D2506299300722E4C /* QDDataTableHeaderView.m */,
+				83ABFA3425066DDA00722E4C /* QDDataTongJiView.h */,
+				83ABFA3525066DDA00722E4C /* QDDataTongJiView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,6 +243,7 @@
 				8378BDF02505E25D0060479D /* Sources */,
 				8378BDF12505E25D0060479D /* Frameworks */,
 				8378BDF22505E25D0060479D /* Resources */,
+				5F7304CDF8A41F496016D379 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,6 +352,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5F7304CDF8A41F496016D379 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QiDian/Pods-QiDian-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QiDian/Pods-QiDian-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QiDian/Pods-QiDian-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -291,11 +378,18 @@
 			files = (
 				8378BDFF2505E25D0060479D /* ViewController.m in Sources */,
 				8378BE282506029D0060479D /* QDTabBarPreLoad.m in Sources */,
+				83ABFA392506758400722E4C /* UIButton+QDExtand.m in Sources */,
 				8378BE242505E7700060479D /* QDTabBarItem.m in Sources */,
+				83ABFA282506208300722E4C /* UIColor+RGB.m in Sources */,
 				8378BDF92505E25D0060479D /* AppDelegate.m in Sources */,
 				8378BE212505E7340060479D /* QDTabBarViewController.m in Sources */,
+				83ABFA3C2506765E00722E4C /* FTKMethodSwizzle.m in Sources */,
 				8378BE0A2505E2600060479D /* main.m in Sources */,
 				8378BDFC2505E25D0060479D /* SceneDelegate.m in Sources */,
+				83ABFA242506089700722E4C /* QDDataViewController.m in Sources */,
+				83ABFA202506082700722E4C /* QDHomePageViewController.m in Sources */,
+				83ABFA3625066DDA00722E4C /* QDDataTongJiView.m in Sources */,
+				83ABFA2E2506299300722E4C /* QDDataTableHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +546,8 @@
 			baseConfigurationReference = 4FDC9531F20A4A49FD0E64EB /* Pods-QiDian.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G37MVUBUBB;
 				INFOPLIST_FILE = QiDian/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -460,9 +555,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanliuba.QiDian;
+				PRODUCT_BUNDLE_IDENTIFIER = QiDian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.sanliuba.QiDian";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -471,7 +568,8 @@
 			baseConfigurationReference = E63AE69124003CDBA85E8F1D /* Pods-QiDian.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G37MVUBUBB;
 				INFOPLIST_FILE = QiDian/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -479,9 +577,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanliuba.QiDian;
+				PRODUCT_BUNDLE_IDENTIFIER = QiDian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.sanliuba.QiDian";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
 			};
 			name = Release;
 		};
