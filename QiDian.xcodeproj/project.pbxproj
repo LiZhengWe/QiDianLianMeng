@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		1915CF298952B115B565F616 /* libPods-QiDian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6B800886098108942EF217 /* libPods-QiDian.a */; };
 		8378BDF92505E25D0060479D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BDF82505E25D0060479D /* AppDelegate.m */; };
-		8378BDFC2505E25D0060479D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BDFB2505E25D0060479D /* SceneDelegate.m */; };
-		8378BDFF2505E25D0060479D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BDFE2505E25D0060479D /* ViewController.m */; };
-		8378BE022505E25D0060479D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8378BE002505E25D0060479D /* Main.storyboard */; };
 		8378BE042505E2600060479D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8378BE032505E2600060479D /* Assets.xcassets */; };
 		8378BE072505E2600060479D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8378BE052505E2600060479D /* LaunchScreen.storyboard */; };
 		8378BE0A2505E2600060479D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BE092505E2600060479D /* main.m */; };
@@ -19,13 +16,19 @@
 		8378BE212505E7340060479D /* QDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BE202505E7340060479D /* QDTabBarViewController.m */; };
 		8378BE242505E7700060479D /* QDTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BE232505E7700060479D /* QDTabBarItem.m */; };
 		8378BE282506029D0060479D /* QDTabBarPreLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BE272506029D0060479D /* QDTabBarPreLoad.m */; };
-		83ABFA202506082700722E4C /* QDHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA1F2506082700722E4C /* QDHomePageViewController.m */; };
 		83ABFA242506089700722E4C /* QDDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA232506089700722E4C /* QDDataViewController.m */; };
 		83ABFA282506208300722E4C /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA272506208300722E4C /* UIColor+RGB.m */; };
 		83ABFA2E2506299300722E4C /* QDDataTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA2D2506299300722E4C /* QDDataTableHeaderView.m */; };
 		83ABFA3625066DDA00722E4C /* QDDataTongJiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA3525066DDA00722E4C /* QDDataTongJiView.m */; };
 		83ABFA392506758400722E4C /* UIButton+QDExtand.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA382506758400722E4C /* UIButton+QDExtand.m */; };
 		83ABFA3C2506765E00722E4C /* FTKMethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA3B2506765E00722E4C /* FTKMethodSwizzle.m */; };
+		83ABFA432507799900722E4C /* QDDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA412507799900722E4C /* QDDataTableViewCell.m */; };
+		83ABFA442507799900722E4C /* QDDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ABFA422507799900722E4C /* QDDataTableViewCell.xib */; };
+		83ABFA472507851600722E4C /* QDKaoHeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA462507851600722E4C /* QDKaoHeHeaderView.m */; };
+		83ABFA4C2507A96200722E4C /* QDMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA4A2507A96200722E4C /* QDMineViewController.m */; };
+		83ABFA4D2507A96200722E4C /* QDMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ABFA4B2507A96200722E4C /* QDMineViewController.xib */; };
+		83ABFA512508602F00722E4C /* QDHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA4F2508602F00722E4C /* QDHomePageViewController.m */; };
+		83ABFA522508602F00722E4C /* QDHomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ABFA502508602F00722E4C /* QDHomePageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +46,6 @@
 		8378BDF42505E25D0060479D /* QiDian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiDian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8378BDF72505E25D0060479D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8378BDF82505E25D0060479D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8378BDFA2505E25D0060479D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		8378BDFB2505E25D0060479D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		8378BDFD2505E25D0060479D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8378BDFE2505E25D0060479D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8378BE012505E25D0060479D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8378BE032505E2600060479D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8378BE062505E2600060479D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8378BE082505E2600060479D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,8 +59,6 @@
 		8378BE232505E7700060479D /* QDTabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDTabBarItem.m; sourceTree = "<group>"; };
 		8378BE262506029D0060479D /* QDTabBarPreLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDTabBarPreLoad.h; sourceTree = "<group>"; };
 		8378BE272506029D0060479D /* QDTabBarPreLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDTabBarPreLoad.m; sourceTree = "<group>"; };
-		83ABFA1E2506082700722E4C /* QDHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDHomePageViewController.h; sourceTree = "<group>"; };
-		83ABFA1F2506082700722E4C /* QDHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDHomePageViewController.m; sourceTree = "<group>"; };
 		83ABFA222506089700722E4C /* QDDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDataViewController.h; sourceTree = "<group>"; };
 		83ABFA232506089700722E4C /* QDDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDDataViewController.m; sourceTree = "<group>"; };
 		83ABFA262506208300722E4C /* UIColor+RGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGB.h"; sourceTree = "<group>"; };
@@ -76,6 +72,17 @@
 		83ABFA382506758400722E4C /* UIButton+QDExtand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+QDExtand.m"; sourceTree = "<group>"; };
 		83ABFA3A2506765E00722E4C /* FTKMethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTKMethodSwizzle.h; sourceTree = "<group>"; };
 		83ABFA3B2506765E00722E4C /* FTKMethodSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTKMethodSwizzle.m; sourceTree = "<group>"; };
+		83ABFA402507799900722E4C /* QDDataTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDataTableViewCell.h; sourceTree = "<group>"; };
+		83ABFA412507799900722E4C /* QDDataTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDDataTableViewCell.m; sourceTree = "<group>"; };
+		83ABFA422507799900722E4C /* QDDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QDDataTableViewCell.xib; sourceTree = "<group>"; };
+		83ABFA452507851600722E4C /* QDKaoHeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDKaoHeHeaderView.h; sourceTree = "<group>"; };
+		83ABFA462507851600722E4C /* QDKaoHeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDKaoHeHeaderView.m; sourceTree = "<group>"; };
+		83ABFA492507A96200722E4C /* QDMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDMineViewController.h; sourceTree = "<group>"; };
+		83ABFA4A2507A96200722E4C /* QDMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDMineViewController.m; sourceTree = "<group>"; };
+		83ABFA4B2507A96200722E4C /* QDMineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QDMineViewController.xib; sourceTree = "<group>"; };
+		83ABFA4E2508602F00722E4C /* QDHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDHomePageViewController.h; sourceTree = "<group>"; };
+		83ABFA4F2508602F00722E4C /* QDHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDHomePageViewController.m; sourceTree = "<group>"; };
+		83ABFA502508602F00722E4C /* QDHomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QDHomePageViewController.xib; sourceTree = "<group>"; };
 		CA6B800886098108942EF217 /* libPods-QiDian.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QiDian.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63AE69124003CDBA85E8F1D /* Pods-QiDian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiDian.release.xcconfig"; path = "Target Support Files/Pods-QiDian/Pods-QiDian.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +146,7 @@
 		8378BDF62505E25D0060479D /* QiDian */ = {
 			isa = PBXGroup;
 			children = (
+				83ABFA482507A92500722E4C /* Mine(我的) */,
 				83ABFA2525061FCF00722E4C /* Tool(工具) */,
 				83ABFA212506083E00722E4C /* Data(数据tab) */,
 				83ABFA1D250607D700722E4C /* Home（首页tab） */,
@@ -146,11 +154,6 @@
 				8378BE1E2505E3E40060479D /* Tab */,
 				8378BDF72505E25D0060479D /* AppDelegate.h */,
 				8378BDF82505E25D0060479D /* AppDelegate.m */,
-				8378BDFA2505E25D0060479D /* SceneDelegate.h */,
-				8378BDFB2505E25D0060479D /* SceneDelegate.m */,
-				8378BDFD2505E25D0060479D /* ViewController.h */,
-				8378BDFE2505E25D0060479D /* ViewController.m */,
-				8378BE002505E25D0060479D /* Main.storyboard */,
 				8378BE032505E2600060479D /* Assets.xcassets */,
 				8378BE052505E2600060479D /* LaunchScreen.storyboard */,
 				8378BE082505E2600060479D /* Info.plist */,
@@ -192,8 +195,9 @@
 		83ABFA1D250607D700722E4C /* Home（首页tab） */ = {
 			isa = PBXGroup;
 			children = (
-				83ABFA1E2506082700722E4C /* QDHomePageViewController.h */,
-				83ABFA1F2506082700722E4C /* QDHomePageViewController.m */,
+				83ABFA4E2508602F00722E4C /* QDHomePageViewController.h */,
+				83ABFA4F2508602F00722E4C /* QDHomePageViewController.m */,
+				83ABFA502508602F00722E4C /* QDHomePageViewController.xib */,
 			);
 			path = "Home（首页tab）";
 			sourceTree = "<group>";
@@ -228,8 +232,23 @@
 				83ABFA2D2506299300722E4C /* QDDataTableHeaderView.m */,
 				83ABFA3425066DDA00722E4C /* QDDataTongJiView.h */,
 				83ABFA3525066DDA00722E4C /* QDDataTongJiView.m */,
+				83ABFA402507799900722E4C /* QDDataTableViewCell.h */,
+				83ABFA412507799900722E4C /* QDDataTableViewCell.m */,
+				83ABFA422507799900722E4C /* QDDataTableViewCell.xib */,
+				83ABFA452507851600722E4C /* QDKaoHeHeaderView.h */,
+				83ABFA462507851600722E4C /* QDKaoHeHeaderView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		83ABFA482507A92500722E4C /* Mine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				83ABFA492507A96200722E4C /* QDMineViewController.h */,
+				83ABFA4A2507A96200722E4C /* QDMineViewController.m */,
+				83ABFA4B2507A96200722E4C /* QDMineViewController.xib */,
+			);
+			path = "Mine(我的)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,7 +335,9 @@
 			files = (
 				8378BE072505E2600060479D /* LaunchScreen.storyboard in Resources */,
 				8378BE042505E2600060479D /* Assets.xcassets in Resources */,
-				8378BE022505E25D0060479D /* Main.storyboard in Resources */,
+				83ABFA522508602F00722E4C /* QDHomePageViewController.xib in Resources */,
+				83ABFA4D2507A96200722E4C /* QDMineViewController.xib in Resources */,
+				83ABFA442507799900722E4C /* QDDataTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,18 +397,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8378BDFF2505E25D0060479D /* ViewController.m in Sources */,
+				83ABFA432507799900722E4C /* QDDataTableViewCell.m in Sources */,
 				8378BE282506029D0060479D /* QDTabBarPreLoad.m in Sources */,
 				83ABFA392506758400722E4C /* UIButton+QDExtand.m in Sources */,
 				8378BE242505E7700060479D /* QDTabBarItem.m in Sources */,
 				83ABFA282506208300722E4C /* UIColor+RGB.m in Sources */,
+				83ABFA512508602F00722E4C /* QDHomePageViewController.m in Sources */,
+				83ABFA4C2507A96200722E4C /* QDMineViewController.m in Sources */,
 				8378BDF92505E25D0060479D /* AppDelegate.m in Sources */,
 				8378BE212505E7340060479D /* QDTabBarViewController.m in Sources */,
 				83ABFA3C2506765E00722E4C /* FTKMethodSwizzle.m in Sources */,
 				8378BE0A2505E2600060479D /* main.m in Sources */,
-				8378BDFC2505E25D0060479D /* SceneDelegate.m in Sources */,
+				83ABFA472507851600722E4C /* QDKaoHeHeaderView.m in Sources */,
 				83ABFA242506089700722E4C /* QDDataViewController.m in Sources */,
-				83ABFA202506082700722E4C /* QDHomePageViewController.m in Sources */,
 				83ABFA3625066DDA00722E4C /* QDDataTongJiView.m in Sources */,
 				83ABFA2E2506299300722E4C /* QDDataTableHeaderView.m in Sources */,
 			);
@@ -412,14 +434,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8378BE002505E25D0060479D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8378BE012505E25D0060479D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8378BE052505E2600060479D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

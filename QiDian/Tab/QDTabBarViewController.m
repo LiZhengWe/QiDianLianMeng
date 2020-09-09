@@ -7,6 +7,7 @@
 //
 
 #import "QDTabBarViewController.h"
+#import "QDAppMacro.h"
 
 @interface QDTabBarViewController ()<UINavigationBarDelegate, UIGestureRecognizerDelegate, UITabBarControllerDelegate>
 
@@ -29,15 +30,16 @@
                   continue;
               }
               
-              if ([_barItems indexOfObject:item] == 0) {
-                  item.isSelected = YES;
-              }
-              
               UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:item.rootViewController];
               navigationController.interactivePopGestureRecognizer.delegate = self;
               navigationController.tabBarItem = item;
               
               [viewControllers addObject:navigationController];
+              
+              if ([_barItems indexOfObject:item] == 0) {
+                  item.isSelected = YES;
+                  self.currentNavigation = navigationController;
+              }
               
           }
           [self setViewControllers:viewControllers];
@@ -48,6 +50,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRGB:0xFF5239],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil]forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRGB:0x333333],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil]forState:UIControlStateNormal];
+
 }
 
 

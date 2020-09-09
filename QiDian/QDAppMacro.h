@@ -15,5 +15,7 @@
 
 #define IS_IPHONEX (([[UIScreen mainScreen] bounds].size.height<812)?NO:YES)
 #define kStatusBarHeight (IS_IPHONEX ? 44 : 20)
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHight [UIScreen mainScreen].bounds.size.height
 
 #endif /* QDAppMacro_h */
