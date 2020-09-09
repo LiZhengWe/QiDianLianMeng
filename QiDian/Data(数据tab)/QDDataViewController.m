@@ -9,6 +9,13 @@
 #import "QDDataViewController.h"
 #import "QDAppMacro.h"
 #import <Masonry/Masonry.h>
+#import "QDDataTableHeaderView.h"
+#import "QDDataTongJiView.h"
+#import "QDKaoHeHeaderView.h"
+#import "QDDataTableViewCell.h"
+
+
+static NSString *const kQDDataTableCellId = @"QDDataTableViewCell";
 
 @interface QDDataViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -17,7 +24,12 @@
 @property (strong, nonatomic)           UILabel *dataLabel;
 @property (strong, nonatomic)           UIButton *kTableBtn;
 
+@property (strong, nonatomic)           QDDataTableHeaderView *shouRuView; // 我的收入
+@property (strong, nonatomic)           QDDataTongJiView *tongJiView; // 数据统计
+
+
 @property (strong, nonatomic)           UITableView *tableView;
+@property (strong, nonatomic)           QDKaoHeHeaderView *headerView;
 
 @end
 
@@ -25,16 +37,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithRGB:0xF5F5F5];
     self.navigationController.navigationBarHidden = YES;
     
     [self configureView];
+    [self reloadView];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 - (void)configureView {
     
+    [self.view addSubview:self.scrollView];
     [self.scrollView addSubview:self.topBgImgView];
     [self.scrollView addSubview:self.dataLabel];
     [self.scrollView addSubview:self.kTableBtn];
+    [self.scrollView addSubview:self.shouRuView];
+    [self.scrollView addSubview:self.tongJiView];
+    [self.scrollView addSubview:self.tableView];
     
     [self configureLayout];
 }
@@ -42,7 +64,7 @@
 - (void)configureLayout {
     
     [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+        make.edges.mas_equalTo(UIEdgeInsetsZero);
     }];
     
     [self.topBgImgView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -59,17 +81,50 @@
         make.centerY.equalTo(self.dataLabel);
     }];
     
+    [self.shouRuView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.dataLabel.mas_bottom).offset(15);
+        make.left.right.equalTo(self.scrollView);
+    }];
+    
+    [self.tongJiView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.scrollView);
+        make.top.equalTo(self.shouRuView.mas_bottom).offset(15);
+    }];
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.scrollView).offset(20);
+        make.right.equalTo(self.scrollView).offset(-20);
+        make.top.equalTo(self.tongJiView.mas_bottom).offset(-25);
+        make.bottom.equalTo(self.scrollView).offset(-20);
+        make.height.mas_equalTo(0);
+    }];
+    
+}
+
+- (void)reloadView {
+    
+    CGFloat height = 0;
+    height = self.headerView.frame.size.height;
+    height += (4*74);
+    [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(height);
+    }];
+    
 }
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    QDDataTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kQDDataTableCellId];
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 74;
 }
 
 #pragma mark - Action
@@ -80,8 +135,7 @@
 #pragma mark - 懒加载
 - (UIImageView *)topBgImgView {
     if (!_topBgImgView) {
-        _topBgImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
-        _topBgImgView.backgroundColor = [UIColor colorWithRGB:0xffba1b];
+        _topBgImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"data_top_bg"]];
     }
     return _topBgImgView;
 }
@@ -121,24 +175,21 @@
             //delegate
             tableView.delegate = self;
             tableView.dataSource = self;
-            
+            tableView.layer.cornerRadius = 15;
+            tableView.scrollEnabled = NO;
             //separator
             tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
             
             //background
             tableView.backgroundColor = [UIColor clearColor];
             
-            //section header/footer & cells
-//            [tableView registerClass:<#(nullable Class)#> forHeaderFooterViewReuseIdentifier:<#(nonnull NSString *)#>];
-//            [tableView registerClass:<#(nullable Class)#> forCellReuseIdentifier:<#(nonnull NSString *)#>];
+           
+            [tableView registerNib:[UINib nibWithNibName:kQDDataTableCellId bundle:nil] forCellReuseIdentifier:kQDDataTableCellId];
             
             //header & footer
-            tableView.tableHeaderView = (UIView *)({
-                UIView *view = [UIView new];
-                view.frame = CGRectMake(0, 0, 0, CGFLOAT_MIN);
-                view.backgroundColor = [UIColor clearColor];
-                view;
-            });
+            tableView.tableHeaderView = [self headerView];
+            
+            
             tableView.tableFooterView = (UIView *)({
                 UIView *view = [UIView new];
                 view.frame = CGRectMake(0, 0, 0, CGFLOAT_MIN);
@@ -170,13 +221,37 @@
     return _tableView;
 }
 
+
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
-        _scrollView = [[UIScrollView alloc] init];
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHight)];
+        _scrollView.showsVerticalScrollIndicator = NO;
     }
     return _scrollView;
 }
 
+
+- (QDDataTableHeaderView *)shouRuView {
+    if (!_shouRuView) {
+        _shouRuView = [[QDDataTableHeaderView alloc] init];
+    }
+    return _shouRuView;
+}
+
+- (QDDataTongJiView *)tongJiView {
+    if (!_tongJiView) {
+        _tongJiView = [[QDDataTongJiView alloc] init];
+    }
+    return _tongJiView;
+}
+
+- (QDKaoHeHeaderView *)headerView {
+    if (!_headerView) {
+        _headerView = [[QDKaoHeHeaderView alloc] init];
+        _headerView.bounds = CGRectMake(0, 0, kScreenWidth, 93);
+    }
+    return _headerView;
+}
 
 /*
 #pragma mark - Navigation

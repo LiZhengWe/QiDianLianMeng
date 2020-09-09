@@ -4,4 +4,5 @@ target 'QiDian' do
   pod 'AFNetworking'
   pod 'Masonry'
   pod 'MJRefresh'
+  pod 'SDCycleScrollView'
 end

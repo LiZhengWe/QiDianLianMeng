@@ -29,6 +29,13 @@
 		83ABFA4D2507A96200722E4C /* QDMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ABFA4B2507A96200722E4C /* QDMineViewController.xib */; };
 		83ABFA512508602F00722E4C /* QDHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA4F2508602F00722E4C /* QDHomePageViewController.m */; };
 		83ABFA522508602F00722E4C /* QDHomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ABFA502508602F00722E4C /* QDHomePageViewController.xib */; };
+		83ABFA562508686800722E4C /* QDHomeBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA552508686800722E4C /* QDHomeBannerView.m */; };
+		83ABFA5B2508699C00722E4C /* QDHomeBannerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA592508699C00722E4C /* QDHomeBannerTableViewCell.m */; };
+		83ABFA5C2508699C00722E4C /* QDHomeBannerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ABFA5A2508699C00722E4C /* QDHomeBannerTableViewCell.xib */; };
+		83ABFA602508703000722E4C /* QDGuangBoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA5E2508703000722E4C /* QDGuangBoTableViewCell.m */; };
+		83ABFA612508703000722E4C /* QDGuangBoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ABFA5F2508703000722E4C /* QDGuangBoTableViewCell.xib */; };
+		83ABFA6525087E6500722E4C /* QDHomeMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA6325087E6500722E4C /* QDHomeMenuTableViewCell.m */; };
+		83ABFA6625087E6500722E4C /* QDHomeMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ABFA6425087E6500722E4C /* QDHomeMenuTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +90,17 @@
 		83ABFA4E2508602F00722E4C /* QDHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDHomePageViewController.h; sourceTree = "<group>"; };
 		83ABFA4F2508602F00722E4C /* QDHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDHomePageViewController.m; sourceTree = "<group>"; };
 		83ABFA502508602F00722E4C /* QDHomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QDHomePageViewController.xib; sourceTree = "<group>"; };
+		83ABFA542508686800722E4C /* QDHomeBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDHomeBannerView.h; sourceTree = "<group>"; };
+		83ABFA552508686800722E4C /* QDHomeBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDHomeBannerView.m; sourceTree = "<group>"; };
+		83ABFA582508699B00722E4C /* QDHomeBannerTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDHomeBannerTableViewCell.h; sourceTree = "<group>"; };
+		83ABFA592508699C00722E4C /* QDHomeBannerTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDHomeBannerTableViewCell.m; sourceTree = "<group>"; };
+		83ABFA5A2508699C00722E4C /* QDHomeBannerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QDHomeBannerTableViewCell.xib; sourceTree = "<group>"; };
+		83ABFA5D2508703000722E4C /* QDGuangBoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDGuangBoTableViewCell.h; sourceTree = "<group>"; };
+		83ABFA5E2508703000722E4C /* QDGuangBoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDGuangBoTableViewCell.m; sourceTree = "<group>"; };
+		83ABFA5F2508703000722E4C /* QDGuangBoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QDGuangBoTableViewCell.xib; sourceTree = "<group>"; };
+		83ABFA6225087E6500722E4C /* QDHomeMenuTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDHomeMenuTableViewCell.h; sourceTree = "<group>"; };
+		83ABFA6325087E6500722E4C /* QDHomeMenuTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDHomeMenuTableViewCell.m; sourceTree = "<group>"; };
+		83ABFA6425087E6500722E4C /* QDHomeMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QDHomeMenuTableViewCell.xib; sourceTree = "<group>"; };
 		CA6B800886098108942EF217 /* libPods-QiDian.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QiDian.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63AE69124003CDBA85E8F1D /* Pods-QiDian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiDian.release.xcconfig"; path = "Target Support Files/Pods-QiDian/Pods-QiDian.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +164,7 @@
 		8378BDF62505E25D0060479D /* QiDian */ = {
 			isa = PBXGroup;
 			children = (
+				83ABFA532508681900722E4C /* ThirdPod(第三方) */,
 				83ABFA482507A92500722E4C /* Mine(我的) */,
 				83ABFA2525061FCF00722E4C /* Tool(工具) */,
 				83ABFA212506083E00722E4C /* Data(数据tab) */,
@@ -195,6 +214,7 @@
 		83ABFA1D250607D700722E4C /* Home（首页tab） */ = {
 			isa = PBXGroup;
 			children = (
+				83ABFA572508695400722E4C /* View */,
 				83ABFA4E2508602F00722E4C /* QDHomePageViewController.h */,
 				83ABFA4F2508602F00722E4C /* QDHomePageViewController.m */,
 				83ABFA502508602F00722E4C /* QDHomePageViewController.xib */,
@@ -249,6 +269,31 @@
 				83ABFA4B2507A96200722E4C /* QDMineViewController.xib */,
 			);
 			path = "Mine(我的)";
+			sourceTree = "<group>";
+		};
+		83ABFA532508681900722E4C /* ThirdPod(第三方) */ = {
+			isa = PBXGroup;
+			children = (
+				83ABFA542508686800722E4C /* QDHomeBannerView.h */,
+				83ABFA552508686800722E4C /* QDHomeBannerView.m */,
+			);
+			path = "ThirdPod(第三方)";
+			sourceTree = "<group>";
+		};
+		83ABFA572508695400722E4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83ABFA582508699B00722E4C /* QDHomeBannerTableViewCell.h */,
+				83ABFA592508699C00722E4C /* QDHomeBannerTableViewCell.m */,
+				83ABFA5A2508699C00722E4C /* QDHomeBannerTableViewCell.xib */,
+				83ABFA5D2508703000722E4C /* QDGuangBoTableViewCell.h */,
+				83ABFA5E2508703000722E4C /* QDGuangBoTableViewCell.m */,
+				83ABFA5F2508703000722E4C /* QDGuangBoTableViewCell.xib */,
+				83ABFA6225087E6500722E4C /* QDHomeMenuTableViewCell.h */,
+				83ABFA6325087E6500722E4C /* QDHomeMenuTableViewCell.m */,
+				83ABFA6425087E6500722E4C /* QDHomeMenuTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,9 +380,12 @@
 			files = (
 				8378BE072505E2600060479D /* LaunchScreen.storyboard in Resources */,
 				8378BE042505E2600060479D /* Assets.xcassets in Resources */,
+				83ABFA6625087E6500722E4C /* QDHomeMenuTableViewCell.xib in Resources */,
 				83ABFA522508602F00722E4C /* QDHomePageViewController.xib in Resources */,
+				83ABFA612508703000722E4C /* QDGuangBoTableViewCell.xib in Resources */,
 				83ABFA4D2507A96200722E4C /* QDMineViewController.xib in Resources */,
 				83ABFA442507799900722E4C /* QDDataTableViewCell.xib in Resources */,
+				83ABFA5C2508699C00722E4C /* QDHomeBannerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83ABFA5B2508699C00722E4C /* QDHomeBannerTableViewCell.m in Sources */,
 				83ABFA432507799900722E4C /* QDDataTableViewCell.m in Sources */,
 				8378BE282506029D0060479D /* QDTabBarPreLoad.m in Sources */,
 				83ABFA392506758400722E4C /* UIButton+QDExtand.m in Sources */,
@@ -409,8 +458,11 @@
 				83ABFA3C2506765E00722E4C /* FTKMethodSwizzle.m in Sources */,
 				8378BE0A2505E2600060479D /* main.m in Sources */,
 				83ABFA472507851600722E4C /* QDKaoHeHeaderView.m in Sources */,
+				83ABFA6525087E6500722E4C /* QDHomeMenuTableViewCell.m in Sources */,
+				83ABFA562508686800722E4C /* QDHomeBannerView.m in Sources */,
 				83ABFA242506089700722E4C /* QDDataViewController.m in Sources */,
 				83ABFA3625066DDA00722E4C /* QDDataTongJiView.m in Sources */,
+				83ABFA602508703000722E4C /* QDGuangBoTableViewCell.m in Sources */,
 				83ABFA2E2506299300722E4C /* QDDataTableHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

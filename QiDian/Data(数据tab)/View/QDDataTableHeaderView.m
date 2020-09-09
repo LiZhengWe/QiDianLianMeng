@@ -84,7 +84,8 @@
     
     [self.grayLine mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.bgView);
-        make.bottom.equalTo(self.bgView).offset(-16);
+        make.top.equalTo(self.totalIncomLab.mas_bottom).offset(30);
+        make.bottom.equalTo(self.bgView).offset(-32);
         make.size.mas_equalTo(CGSizeMake(1, 45));
     }];
     
@@ -115,14 +116,16 @@
 #pragma mark - lazy load
 - (UIView *)bgView {
     if (!_bgView) {
-        _bgView = [[UIView alloc] init];
-        _bgView.backgroundColor = [UIColor whiteColor];
-        _bgView.layer.masksToBounds = YES;
-        _bgView.layer.cornerRadius = 12;
-        _bgView.layer.shadowColor = [UIColor blackColor].CGColor;
-        _bgView.layer.shadowOffset = CGSizeMake(5, 5);
-        _bgView.layer.shadowRadius = 12;
-        _bgView.layer.shadowOpacity = 0.05;
+        _bgView = (UIView *)({
+            UIView *style = [[UIView alloc] initWithFrame:CGRectZero];
+            style.layer.cornerRadius = 15;
+            style.layer.backgroundColor = [[UIColor whiteColor] CGColor];
+            style.layer.shadowColor = [UIColor blackColor].CGColor;
+            style.layer.shadowOpacity = 0.05;
+            style.layer.shadowOffset = CGSizeMake(5, 5);
+            style.layer.shadowRadius = 3;
+            style;
+        });
     }
     return _bgView;
 }
@@ -215,6 +218,7 @@
 - (UIButton *)hiddenBtn {
     if (!_hiddenBtn) {
         _hiddenBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_hiddenBtn setImage:[UIImage imageNamed:@"data_eye"] forState:UIControlStateNormal];
     }
     return _hiddenBtn;
 }

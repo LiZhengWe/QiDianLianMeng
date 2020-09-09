@@ -12,6 +12,7 @@
 #import "UIColor+RGB.h"
 #import <MJRefresh/MJRefresh.h>
 #import <Masonry/Masonry.h>
+#import <SDCycleScrollView/SDCycleScrollView.h>
 
 #define IS_IPHONEX (([[UIScreen mainScreen] bounds].size.height<812)?NO:YES)
 #define kStatusBarHeight (IS_IPHONEX ? 44 : 20)

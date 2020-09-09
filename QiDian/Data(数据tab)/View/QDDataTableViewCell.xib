@@ -1,21 +1,88 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="QDDataTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="125" id="KGk-i7-Jjw" customClass="QDDataTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="522" height="125"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="522" height="125"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVy-Iw-CNV">
+                        <rect key="frame" x="148" y="73.5" width="108" height="33"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <state key="normal" title="35">
+                            <color key="titleColor" red="0.015441819094121456" green="0.83579117059707642" blue="0.98901277780532837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unh-0A-tMW">
+                        <rect key="frame" x="266" y="73.5" width="108" height="33"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <state key="normal" title="35">
+                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTI-cl-naE">
+                        <rect key="frame" x="384" y="73.5" width="108" height="33"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <state key="normal" title="35">
+                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnO-1Y-zTY">
+                        <rect key="frame" x="0.0" y="0.0" width="98" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="第n次考核结果是多少" backgroundImage="data_kaohe"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4v-X9-5nZ">
+                        <rect key="frame" x="30" y="75" width="108" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Ter-Qx-aXS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <state key="normal" title="35">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gVy-Iw-CNV" firstAttribute="leading" secondItem="p4v-X9-5nZ" secondAttribute="trailing" constant="10" id="1TK-21-zsI"/>
+                    <constraint firstItem="unh-0A-tMW" firstAttribute="leading" secondItem="gVy-Iw-CNV" secondAttribute="trailing" constant="10" id="8sc-ED-Cw1"/>
+                    <constraint firstItem="unh-0A-tMW" firstAttribute="centerY" secondItem="p4v-X9-5nZ" secondAttribute="centerY" id="CpA-yt-u7M"/>
+                    <constraint firstAttribute="bottom" secondItem="p4v-X9-5nZ" secondAttribute="bottom" constant="20" id="Dz8-ej-WV6"/>
+                    <constraint firstItem="RTI-cl-naE" firstAttribute="leading" secondItem="unh-0A-tMW" secondAttribute="trailing" constant="10" id="LXd-Uv-KAZ"/>
+                    <constraint firstItem="RTI-cl-naE" firstAttribute="width" secondItem="p4v-X9-5nZ" secondAttribute="width" id="Orh-Ki-x8J"/>
+                    <constraint firstItem="p4v-X9-5nZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="QXd-SJ-ZN1"/>
+                    <constraint firstItem="gVy-Iw-CNV" firstAttribute="width" secondItem="p4v-X9-5nZ" secondAttribute="width" id="RhO-1n-I1e"/>
+                    <constraint firstItem="ZnO-1Y-zTY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fl0-K3-0Sv"/>
+                    <constraint firstItem="unh-0A-tMW" firstAttribute="width" secondItem="p4v-X9-5nZ" secondAttribute="width" id="mXB-Zo-ULI"/>
+                    <constraint firstItem="gVy-Iw-CNV" firstAttribute="centerY" secondItem="p4v-X9-5nZ" secondAttribute="centerY" id="mbJ-sA-giF"/>
+                    <constraint firstAttribute="trailing" secondItem="RTI-cl-naE" secondAttribute="trailing" constant="30" id="qJW-NR-eZC"/>
+                    <constraint firstItem="ZnO-1Y-zTY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uFC-mb-kq9"/>
+                    <constraint firstItem="RTI-cl-naE" firstAttribute="centerY" secondItem="p4v-X9-5nZ" secondAttribute="centerY" id="vNI-DK-z1N"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="kaoHeBtn" destination="ZnO-1Y-zTY" id="6q0-tY-txp"/>
+                <outlet property="keHeZhongBtn" destination="p4v-X9-5nZ" id="yjG-9R-hlp"/>
+                <outlet property="weiDaBiao" destination="vNI-DK-z1N" id="eXF-0o-13r"/>
+                <outlet property="weiKaiShi" destination="gVy-Iw-CNV" id="ksV-uG-Fbo"/>
+                <outlet property="yiDaBiaoBtn" destination="unh-0A-tMW" id="7Dz-e5-2BE"/>
+            </connections>
+            <point key="canvasLocation" x="120.28985507246378" y="78.013392857142847"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="data_kaohe" width="13" height="23.5"/>
+    </resources>
 </document>

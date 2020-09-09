@@ -8,6 +8,17 @@
 
 #import "QDDataTableViewCell.h"
 
+@interface QDDataTableViewCell ()
+@property (weak, nonatomic) IBOutlet UIButton *kaoHeBtn;
+@property (weak, nonatomic) IBOutlet UIButton *keHeZhongBtn;
+@property (weak, nonatomic) IBOutlet UIButton *weiKaiShi;
+@property (weak, nonatomic) IBOutlet UIButton *yiDaBiaoBtn;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *weiDaBiao;
+
+
+@end
+
 @implementation QDDataTableViewCell
 
 - (void)awakeFromNib {

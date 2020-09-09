@@ -84,7 +84,7 @@
     [self.tiaoJianBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.bgView);
         make.centerY.equalTo(self.tongJiTitle);
-        make.size.mas_equalTo(CGSizeMake(145, 46));
+        make.size.mas_equalTo(CGSizeMake(100, 46));
     }];
     
     [self.shaiXuanBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -156,16 +156,29 @@
     [self.activeMachineNum mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.activeMachine);
         make.top.equalTo(self.activeMachine.mas_bottom).offset(15);
+        make.bottom.equalTo(self.bgView).offset(-40);
     }];
+}
+
+#pragma mark - Action
+- (void)tiaoJianBtnClick:(id)sender {
+    
+}
+
+- (void)shaiXuanBtnClick:(id)sender {
+    
+}
+
+- (void)resetShaiXuanClick:(id)sender {
+    
 }
 
 #pragma mark - lazy Load
 - (UIImageView *)bgView {
     if (!_bgView) {
-        _bgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
-        _bgView.backgroundColor = [UIColor colorWithRGB:0x2F24FA];
-        _bgView.layer.masksToBounds = YES;
-        _bgView.layer.cornerRadius = 12;
+        _bgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"data_tongji_bg"]];
+//        _bgView.layer.masksToBounds = YES;
+//        _bgView.layer.cornerRadius = 12;
     }
     return _bgView;
 }
@@ -219,9 +232,7 @@
             [button setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
             
             button.titleLabel.font = [UIFont systemFontOfSize:14];
-            button.backgroundColor = [UIColor whiteColor];
-            button.layer.masksToBounds = YES;
-            button.layer.cornerRadius = 23;
+            button.backgroundColor = [UIColor clearColor];
             [button addTarget:self action:@selector(shaiXuanBtnClick:) forControlEvents:UIControlEventTouchUpInside];
             button;
         });
@@ -229,23 +240,23 @@
     return _shaiXuanBtn;
 }
 
-- (UIButton *)questionBtn {
-    if (!_questionBtn) {
-        _questionBtn = (UIButton *)({
-            UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
-        
-            [button setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
-            
-            button.titleLabel.font = [UIFont systemFontOfSize:14];
-            button.backgroundColor = [UIColor whiteColor];
-            button.layer.masksToBounds = YES;
-            button.layer.cornerRadius = 23;
-            [button addTarget:self action:@selector(questionBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-            button;
-        });
-    }
-    return _questionBtn;
-}
+//- (UIButton *)questionBtn {
+//    if (!_questionBtn) {
+//        _questionBtn = (UIButton *)({
+//            UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+//
+//            [button setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+//
+//            button.titleLabel.font = [UIFont systemFontOfSize:14];
+//            button.backgroundColor = [UIColor whiteColor];
+//            button.layer.masksToBounds = YES;
+//            button.layer.cornerRadius = 23;
+//            [button addTarget:self action:@selector(questionBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+//            button;
+//        });
+//    }
+//    return _questionBtn;
+//}
 
 - (UIButton *)resetShaiXuan {
     if (!_resetShaiXuan) {
