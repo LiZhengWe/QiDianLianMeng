@@ -1,18 +1,18 @@
 //
-//  QDHomePageViewController.m
+//  QDMineViewController.m
 //  QiDian
 //
-//  Created by yiner on 2020/9/9.
+//  Created by yiner on 2020/9/8.
 //  Copyright © 2020 Henan Sanliuba Network Technology Co., Ltd. All rights reserved.
 //
 
-#import "QDHomePageViewController.h"
+#import "QDMineViewController.h"
 
-@interface QDHomePageViewController ()
+@interface QDMineViewController ()
 
 @end
 
-@implementation QDHomePageViewController
+@implementation QDMineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

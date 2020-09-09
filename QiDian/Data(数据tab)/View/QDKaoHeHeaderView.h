@@ -1,8 +1,8 @@
 //
-//  QDHomePageViewController.h
+//  QDKaoHeHeaderView.h
 //  QiDian
 //
-//  Created by yiner on 2020/9/9.
+//  Created by yiner on 2020/9/8.
 //  Copyright © 2020 Henan Sanliuba Network Technology Co., Ltd. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface QDHomePageViewController : UIViewController
+@interface QDKaoHeHeaderView : UIView
 
 @end
 
