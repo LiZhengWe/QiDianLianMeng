@@ -10,6 +10,7 @@
 #define QDAppMacro_h
 
 #import "UIColor+RGB.h"
+#import "UIButton+QDExtand.h"
 #import <MJRefresh/MJRefresh.h>
 #import <Masonry/Masonry.h>
 #import <SDCycleScrollView/SDCycleScrollView.h>

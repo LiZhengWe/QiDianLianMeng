@@ -36,6 +36,8 @@
 		83ABFA612508703000722E4C /* QDGuangBoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ABFA5F2508703000722E4C /* QDGuangBoTableViewCell.xib */; };
 		83ABFA6525087E6500722E4C /* QDHomeMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA6325087E6500722E4C /* QDHomeMenuTableViewCell.m */; };
 		83ABFA6625087E6500722E4C /* QDHomeMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ABFA6425087E6500722E4C /* QDHomeMenuTableViewCell.xib */; };
+		83ABFA6A2508AFEB00722E4C /* QDHomeYeJiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ABFA682508AFEB00722E4C /* QDHomeYeJiTableViewCell.m */; };
+		83ABFA6B2508AFEB00722E4C /* QDHomeYeJiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83ABFA692508AFEB00722E4C /* QDHomeYeJiTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,9 @@
 		83ABFA6225087E6500722E4C /* QDHomeMenuTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDHomeMenuTableViewCell.h; sourceTree = "<group>"; };
 		83ABFA6325087E6500722E4C /* QDHomeMenuTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDHomeMenuTableViewCell.m; sourceTree = "<group>"; };
 		83ABFA6425087E6500722E4C /* QDHomeMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QDHomeMenuTableViewCell.xib; sourceTree = "<group>"; };
+		83ABFA672508AFEB00722E4C /* QDHomeYeJiTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDHomeYeJiTableViewCell.h; sourceTree = "<group>"; };
+		83ABFA682508AFEB00722E4C /* QDHomeYeJiTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDHomeYeJiTableViewCell.m; sourceTree = "<group>"; };
+		83ABFA692508AFEB00722E4C /* QDHomeYeJiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QDHomeYeJiTableViewCell.xib; sourceTree = "<group>"; };
 		CA6B800886098108942EF217 /* libPods-QiDian.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QiDian.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63AE69124003CDBA85E8F1D /* Pods-QiDian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiDian.release.xcconfig"; path = "Target Support Files/Pods-QiDian/Pods-QiDian.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -292,6 +297,9 @@
 				83ABFA6225087E6500722E4C /* QDHomeMenuTableViewCell.h */,
 				83ABFA6325087E6500722E4C /* QDHomeMenuTableViewCell.m */,
 				83ABFA6425087E6500722E4C /* QDHomeMenuTableViewCell.xib */,
+				83ABFA672508AFEB00722E4C /* QDHomeYeJiTableViewCell.h */,
+				83ABFA682508AFEB00722E4C /* QDHomeYeJiTableViewCell.m */,
+				83ABFA692508AFEB00722E4C /* QDHomeYeJiTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -385,6 +393,7 @@
 				83ABFA612508703000722E4C /* QDGuangBoTableViewCell.xib in Resources */,
 				83ABFA4D2507A96200722E4C /* QDMineViewController.xib in Resources */,
 				83ABFA442507799900722E4C /* QDDataTableViewCell.xib in Resources */,
+				83ABFA6B2508AFEB00722E4C /* QDHomeYeJiTableViewCell.xib in Resources */,
 				83ABFA5C2508699C00722E4C /* QDHomeBannerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +468,7 @@
 				8378BE0A2505E2600060479D /* main.m in Sources */,
 				83ABFA472507851600722E4C /* QDKaoHeHeaderView.m in Sources */,
 				83ABFA6525087E6500722E4C /* QDHomeMenuTableViewCell.m in Sources */,
+				83ABFA6A2508AFEB00722E4C /* QDHomeYeJiTableViewCell.m in Sources */,
 				83ABFA562508686800722E4C /* QDHomeBannerView.m in Sources */,
 				83ABFA242506089700722E4C /* QDDataViewController.m in Sources */,
 				83ABFA3625066DDA00722E4C /* QDDataTongJiView.m in Sources */,

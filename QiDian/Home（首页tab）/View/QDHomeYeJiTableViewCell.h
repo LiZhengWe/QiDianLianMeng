@@ -10,7 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, QDHomeYeJiCellType) {
+    QDHomeYeJiCellTypeToday,
+    QDHomeYeJiCellTypeMonth
+};
+
 @interface QDHomeYeJiTableViewCell : UITableViewCell
+
+@property (assign, nonatomic)           QDHomeYeJiCellType cellType;
 
 @end
 
